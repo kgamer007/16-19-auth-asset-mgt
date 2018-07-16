@@ -2,7 +2,6 @@
 
 import logger from '../logger';
 
-// in express, error handling middleware must follow this exact signature of four args, where the first arg is considered the error, and is followed by request, response, next
 export default (error, request, response, next) => { /*eslint-disable-line*/
   logger.log(logger.ERROR, `ERROR MIDDLEWARE: ${JSON.stringify(error)}`);
 

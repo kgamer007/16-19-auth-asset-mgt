@@ -7,3 +7,13 @@
 ## Heroku
 https://lab-16-19-kevin.herokuapp.com/
 
+
+## API Endpoints
+POST api/signup
+Creates new user account. Body request must include a username, password and email.
+```
+http POST localhost:3000/api/signup username=Paul password=aslkdjf email='wonderworld@somemail.com'
+```
+
+GET api/login
+This route requires the username and password to be base 64 encrypted
